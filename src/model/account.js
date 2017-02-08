@@ -4,8 +4,9 @@ import passportLocalMongoose from 'passport-local-mongoose';
 
 let Account = new Schema ({
   email: String,
-  password: String 
+  password: String
 });
 
 Account.plugin(passportLocalMongoose);
-module.export = mongoose.model('Account', Account);
+module.exports = mongoose.model('Account', Account);
+ 
